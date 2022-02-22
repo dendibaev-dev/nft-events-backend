@@ -12,9 +12,7 @@ import { FilesModule } from './files/files.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot('mongodb://admin:admin@mongo_db:27017', {
-      dbName: 'my_db'
-   }),
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/nest'),
     AuthModule,
     PostModule,
     SliderModule,
